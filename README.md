@@ -40,7 +40,7 @@ This work is about HLS course, Duth ECCE 9 Semester and contains 4 projects on H
 ## Project 2
 ---
 
-- In this project we have to use wavesort function we implemented on **Project 1** , but with bubble sort algorithm.In addition we have to write a main function for testing our code.
+- In this project we have to use wavesort function we implemented on **Project 1** , but with bubble sort algorithm. In addition we have to write a main function for testing our code.
   
 - For Catapult now we have to to make the following steps : <br/>
      
