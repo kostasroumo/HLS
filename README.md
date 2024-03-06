@@ -44,13 +44,13 @@ This work is about HLS course, Duth ECCE 9 Semester and contains 4 projects on H
   
 - For Catapult now we have to to make the following steps : <br/>
      
-     - 1. In the hierarchy stage you will select as top the function that implements wavesort.
+     - 1. In the hierarchy stage you will select as top module  the function that implements wavesort.
     
      - 2. In the libraries stage we ensure that we select libraries for RAM.
         
-     - 3. In the mapping stage we set a 500MHz frequency clock.
+     - 3. In the mapping stage we set a **500MHz** frequency clock.
 
-     - 4. In the architecture stage, we have to set the input/output interface  to be a memory  with a read port and a write port 1R1W. We select "ccs_sample_mem.ccs_ram_sync_1R1W or  ram_nangate-45nm-separate_beh.RAM_separateRW".
+     - 4. In the architecture stage, we have to set the input/output interface  to be a memory  with a read port and a write port **1R1W**. We select "ccs_sample_mem.ccs_ram_sync_1R1W or  ram_nangate-45nm-separate_beh.RAM_separateRW".
 
      - 5. We make RTL and we verify the correctness of the circuit through co-simulation.
   
