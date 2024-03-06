@@ -53,7 +53,10 @@ This work is about HLS course, Duth ECCE 9 Semester and contains 4 projects on H
      - 4. In the architecture stage, we have to set the input/output interface  to be a memory  with a read port and a write port **1R1W**. We select "ccs_sample_mem.ccs_ram_sync_1R1W or  ram_nangate-45nm-separate_beh.RAM_separateRW".
 
      - 5. We make RTL and we verify the correctness of the circuit through co-simulation.
-  
-  
 
+<br/>
+
+
+## Project 3
+---
 
