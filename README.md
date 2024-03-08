@@ -60,3 +60,31 @@ This work is about HLS course, Duth ECCE 9 Semester and contains 4 projects on H
 ## Project 3
 ---
 
+This set-project is about identifying the dependencies that occur in a circuit that do not allow pipelining and transforming the loops to succesfully merge them.
+
+- **Exercise 1** <br/>
+  
+  The function compute_row_sum computes the sum of each row of arrat a.
+         
+         template<int N>
+         void compute_row_sum(short a[N][M], short row_sum[N]) {
+         ROW: for (int i=0; i<N; i++){
+              row_sum[i]=0;
+              SUM: for (int j=0; j<M; j++){
+                 row_sum[i]+=a[i][j];
+                 }
+                  }
+                  }
+
+
+We make the function with HLS with following constrains:
+   
+  -  1. The circuit interface will include two separate memory interfaces of 16bit each , **1R1W**.
+  
+  -  2. We compose our circuit by aiming for **500MHz** in **45nm** technology. What is the total execution time in cycles?
+  
+  -  3. We change the architecture of the circuit, pipelining the ROW and SUM iterations, with an Inititation Interval of 1. Why can't this be achieved?
+   
+  - 4. We have to change c++ to achieve step 3.
+  
+  - 5. After changes our circuit should go through the RTL simulation (co-simulation). We observe the differencers in the simulation times.
