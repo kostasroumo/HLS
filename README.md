@@ -77,14 +77,14 @@ This set-project is about identifying the dependencies that occur in a circuit t
                   }
 
 
-We implement  this function via HLS  on hardware under the  following conditions:
+  We implement  this function via HLS  on hardware under the  following conditions:
    
-  -  1. The circuit interface will include two separate memory interfaces of 16bit each , **1R1W**.
+     -  1. The circuit interface will include two separate memory interfaces of 16bit each , **1R1W**.
   
-  -  2. We compose our circuit by aiming for **500MHz** in **45nm** technology. What is the total execution time in cycles?
+     -  2. We compose our circuit by aiming for **500MHz** in **45nm** technology. What is the total execution time in cycles?
   
-  -  3. We change the architecture of the circuit, pipelining the ROW and SUM iterations, with an Inititation Interval of 1. Why can't this be achieved?
+     -  3. We change the architecture of the circuit, pipelining the ROW and SUM iterations, with an Inititation Interval of 1. Why can't this be achieved?
    
-  - 4. We have to change c++ to achieve step 3.
+    -  4. We have to change c++ to achieve step 3.
   
-  - 5. After changes our circuit should go through the RTL simulation (co-simulation). We observe the differencers in the simulation times.
+    -  5. After changes our circuit should go through the RTL simulation (co-simulation). We observe the differencers in the simulation times.
