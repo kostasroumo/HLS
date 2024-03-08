@@ -77,7 +77,7 @@ This set-project is about identifying the dependencies that occur in a circuit t
                   }
 
 
-We make the function with HLS with following constrains:
+We implement  this function via HLS  on hardware under the  following conditions:
    
   -  1. The circuit interface will include two separate memory interfaces of 16bit each , **1R1W**.
   
