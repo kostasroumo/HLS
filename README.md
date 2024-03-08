@@ -68,11 +68,11 @@ This set-project is about identifying the dependencies that occur in a circuit t
          
          template<int N>
          void compute_row_sum(short a[N][M], short row_sum[N]) {
-         ROW: for (int i=0; i<N; i++){
-              row_sum[i]=0;
-              SUM: for (int j=0; j<M; j++){
-                 row_sum[i]+=a[i][j];
-                 }
+             ROW: for (int i=0; i<N; i++){
+                  row_sum[i]=0;
+                  SUM: for (int j=0; j<M; j++){
+                       row_sum[i]+=a[i][j];
+                  }
                   }
                   }
 
