@@ -122,4 +122,15 @@ This set-project is about identifying the dependencies that occur in a circuit t
   
 
   We have to change the architecture of the circuit because we have problem.After changes our circuit should go through the RTL simulation (co-simulation).
+
+
+- **Exercise 3** <br/>
+    
+    The following function computes the sum of two elements of vectors :
+         
+
+         void two_loops(int A[10],int B[100], int &res){
+               }
+          
+   
   
