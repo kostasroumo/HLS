@@ -114,11 +114,11 @@ This set-project is about identifying the dependencies that occur in a circuit t
 
   We implement  this function via HLS  on hardware under the  following conditions:
      
-     - 1. We compose our circuit by aiming for **500MHz** in **45nm** technology.
+    - 1. We compose our circuit by aiming for **500MHz** in **45nm** technology.
       
-      - 2. The Interface of the circuit  must be one memory 32bit type **1R1W**.
+    - 2. The Interface of the circuit  must be one memory 32bit type **1R1W**.
 
-      - 3. We apply pipeline with initiation interval 1 in loop LOOP.
+    - 3. We apply pipeline with initiation interval 1 in loop LOOP.
   
 
   We have to change the architecture of the circuit because we have problem.After changes our circuit should go through the RTL simulation (co-simulation).
