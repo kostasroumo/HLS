@@ -88,3 +88,38 @@ This set-project is about identifying the dependencies that occur in a circuit t
     -  4. We have to change c++ to achieve step 3.
   
     -  5. After changes our circuit should go through the RTL simulation (co-simulation). We observe the differencers in the simulation times.
+  
+
+<br/>
+
+- **Exercise 2** <br/>
+  
+  The following function computes Fibonacci sequence.
+
+    $$ fib[i]=fib[i-1]+fib[i-2],\ fib[0]=fib[1]=1. $$
+
+        
+          template<int N>
+          void fibonacci(int fib[N]) {
+              LOOP: for (int i = 0; i < N; i++) {
+                   if (i < 2) {
+                       fib[i] = 1;
+                   } else {
+                       fib[i] = fib[i-1] + fib[i-2];
+                       }
+                    }
+                 }    
+  
+  <br/>
+
+  We implement  this function via HLS  on hardware under the  following conditions:
+     
+     - 1. We compose our circuit by aiming for **500MHz** in **45nm** technology.
+      
+      - 2. The Interface of the circuit  must be one memory 32bit type **1R1W**.
+
+      - 3. We apply pipeline with initiation interval 1 in loop LOOP.
+  
+
+  We have to change the architecture of the circuit because we have problem.After changes our circuit should go through the RTL simulation (co-simulation).
+  
