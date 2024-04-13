@@ -130,7 +130,34 @@ This set-project is about identifying the dependencies that occur in a circuit t
          
 
          void two_loops(int A[10],int B[100], int &res){
+               int sum=0;
+               LOOP1: for(int i=0; i<10; i++){
+
+                     sum+=A[i];
+                  }
+
+               LOOP2: for(int i=0; i<100; i++){
+                      
+                      sum+=B[i];
+                      }
+
+              res=sum;
+            
                }
-          
+
+
+    <br/>
+
+  We implement  this function via HLS  on hardware under the  following conditions:
+
+      - 1. We compose our circuit by aiming for **500MHz** in **45nm** technology.
+       
+      - 2. The interface of the circuit should consist of two 32bit memory interfaces (one for
+for table A and one for table B), of type 1R1W.
+
+  
+  As we observe on scheduling, Catapult cannot merge the two loops into one. This is due both to the different boundaries of the two loops, and to dependencies between them when calculating the sum. We have to transform C++ so that Catapult manages to merge the two loops. 
+
+       
    
   
